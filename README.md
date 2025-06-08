@@ -53,7 +53,7 @@ spring.datasource.password=your_password
 3. Run backend:
 
 ```bash
-cd backend
+cd StudentManagement_Backend
 ./mvnw spring-boot:run
 ```
 
@@ -72,10 +72,10 @@ cd backend
 
 ### ⚙️ Run the Frontend:
 
-1. Navigate to `frontend/`:
+1. Navigate to `StudentManagement_FrontEnd/`:
 
 ```bash
-cd frontend
+cd StudentManagement_FrontEnd
 ```
 
 2. Install dependencies:
@@ -87,10 +87,10 @@ npm install
 3. Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
-> The React app will run on [http://localhost:3000](http://localhost:3000)
+> The React app will run on [http://localhost:5173](http://localhost:5173)
 
 ---
 
@@ -98,28 +98,18 @@ npm start
 
 ### 📚 Student
 
-- `POST /api/student/add`  
-- `GET /api/student/all`
+- `POST /api/student`  
+- `GET /api/student`
 
 ### 📘 Course
 
-- `POST /api/course/add`  
-- `GET /api/course/all`
+- `POST /api/course`  
+- `GET /api/course`
 
 ### 🔁 Enrollment
 
-- `POST /api/enrollment/enroll?student_id=1&course_id=2`  
+- `POST /api/enrollment/?student_id=1&course_id=2`  
 - `GET /api/enrollment/student/{id}` → list courses for student
-
----
-
-## ⚠️ CORS Note
-
-The backend allows CORS for React development. Configured in `CorsConfig.java`:
-
-```java
-registry.addMapping("/**").allowedOrigins("http://localhost:3000");
-```
 
 ---
 
@@ -134,8 +124,7 @@ registry.addMapping("/**").allowedOrigins("http://localhost:3000");
 
 ## 🙌 Author
 
-- [Your Name]  
-- [Your GitHub Profile Link]
+- [Avadhut Mali](https://github.com/avadhutmali)
 
 ---
 
