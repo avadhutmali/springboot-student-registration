@@ -1,16 +1,16 @@
 
-# 🎓 Student Course Registration System
+# Student Course Registration System
 
 A full-stack web application for managing student course registrations.
 
 This project is built using:
-- 🧠 **Spring Boot** (backend, using JDBC for database access)
-- ⚛️ **React** (frontend, for interacting with the system)
-- 🐬 **MySQL** (as the relational database)
+- **Spring Boot** (backend, using JDBC for database access)
+- **React** (frontend, for interacting with the system)
+- **MySQL** (as the relational database)
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 .
@@ -21,20 +21,20 @@ This project is built using:
 
 ---
 
-## 🔧 Backend Setup (Spring Boot + JDBC)
+## Backend Setup (Spring Boot + JDBC)
 
-### 📦 Tech Stack:
+### Tech Stack:
 - Spring Boot 3.5+
 - JDBC Template (no JPA)
 - MySQL
 - Maven
 
-### 📄 Prerequisites:
+### Prerequisites:
 - Java 21+
 - MySQL installed and running
 - Maven
 
-### ⚙️ Run the Backend:
+### Run the Backend:
 
 1. Create database:
 
@@ -57,7 +57,7 @@ cd StudentManagement_Backend
 ./mvnw spring-boot:run
 ```
 
-### ✅ Features:
+### Features:
 
 - Admin can:
   - Add new students
@@ -68,9 +68,9 @@ cd StudentManagement_Backend
 
 ---
 
-## 🎨 Frontend Setup (React)
+## Frontend Setup (React)
 
-### ⚙️ Run the Frontend:
+### Run the Frontend:
 
 1. Navigate to `StudentManagement_FrontEnd/`:
 
@@ -94,26 +94,26 @@ npm run dev
 
 ---
 
-## 🔗 API Endpoints
+## API Endpoints
 
-### 📚 Student
+### Student
 
 - `POST /api/student`  
 - `GET /api/student`
 
-### 📘 Course
+### Course
 
 - `POST /api/course`  
 - `GET /api/course`
 
-### 🔁 Enrollment
+### Enrollment
 
 - `POST /api/enrollment/?student_id=1&course_id=2`  
 - `GET /api/enrollment/student/{id}` → list courses for student
 
 ---
 
-## 📌 Future Enhancements
+## Future Enhancements
 
 - Add authentication (Spring Security / JWT)
 - Role-based access (Admin vs Student)
@@ -122,9 +122,6 @@ npm run dev
 
 ---
 
-## 🙌 Author
-
-- [Avadhut Mali](https://github.com/avadhutmali)
 
 ---
 
